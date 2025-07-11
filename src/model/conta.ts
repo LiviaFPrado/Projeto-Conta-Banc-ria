@@ -1,4 +1,4 @@
-export class Conta {
+export abstract class Conta {
 
     private _numero: number;
     private _agencia: number;
@@ -16,36 +16,36 @@ export class Conta {
 
     }
 
-    public get numero(): number {
+    public get numero() {
         return this._numero;
     }
-    public set numero(value: number) {
-        this._numero = value;
+    public set numero(numero: number) {
+        this._numero = numero;
     }
 
-    public get agencia(): number {
+    public get agencia() {
         return this._agencia;
     }
-    public set agencia(value: number) {
-        this._agencia = value;
+    public set agencia(agencia: number) {
+        this._agencia = agencia;
     }
-    public get tipo(): number {
+    public get tipo() {
         return this._tipo;
     }
-    public set tipo(value: number) {
-        this._tipo = value;
+    public set tipo(tipo: number) {
+        this._tipo = tipo;
     }
-    public get titular(): string {
+    public get titular() {
         return this._titular;
     }
-    public set titular(value: string) {
-        this._titular = value;
+    public set titular(titular: string) {
+        this._titular = titular;
     }
-    public get saldo(): number {
+    public get saldo() {
         return this._saldo;
     }
-    public set saldo(value: number) {
-        this._saldo = value;
+    public set saldo(saldo: number) {
+        this._saldo = saldo;
     }
 
     public sacar(valor: number): boolean {
